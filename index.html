@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Specificity</title>
+
+  <style>
+    .paragraph {
+      color: green;
+    }
+    
+    /* this will overwrite the above code
+    because it comes after it.
+    Try switching the order of the code and see
+    what happens */
+    .paragraph {
+      color: turquoise;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, harum.</p>
+  </div>
+</body>
+</html>
+
+<!--Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.
+
+The universal selector (*) has low specificity, while ID selectors are highly specific! -->
